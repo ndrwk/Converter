@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Конвертер</string>
+    <string name="choose_currency">Выбор валюты</string>
+    <string name="choose_dest_currency">Выбор источника</string>
+    <string name="choose_source_currency">Куда перевести</string>
+    <string name="sourse_summ">Введите сумму</string>
+</resources>

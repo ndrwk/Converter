@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="choose_currency">Choose currency</string>
+    <string name="choose_dest_currency">Choose destination currency</string>
+    <string name="choose_source_currency">Choose source currency</string>
+    <string name="sourse_summ">Enter the summ</string>
+</resources>

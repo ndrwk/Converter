@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Конвертер</string>
+    <string name="choose_source_currency">Choose source currency</string>
+    <string name="choose_dest_currency">Choose destination currency</string>
+    <string name="sourse_summ">Enter the summ</string>
+    <string name="choose_currency">Choose currency</string>
+</resources>
