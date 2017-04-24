@@ -1,3 +1,17 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="big_margin">24dp</dimen>
+    <dimen name="double_margin">16dp</dimen>
+    <dimen name="general_margin">8dp</dimen>
+    <dimen name="half_margin">4dp</dimen>
+    <dimen name="text_in_list_size">16sp</dimen>
+    <dimen name="text_in_source_sum_size">20sp</dimen>
+    <dimen name="text_in_card">20sp</dimen>
+    <dimen name="dest_sum_in_card">36sp</dimen>
+    <dimen name="card_height">80dp</dimen>
+
+    <integer name="text_lines_in_list_item">2</integer>
+    <integer name="text_lines_in_source_sum">1</integer>
+    <integer name="text_lines_in_card">2</integer>
+
+
 </resources>

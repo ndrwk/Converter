@@ -6,7 +6,7 @@
                                              android:layout_height="match_parent">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView1"
+        android:id="@+id/source_sum_place"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginLeft="8dp"
@@ -20,7 +20,7 @@
         android:layout_marginEnd="8dp">
 
         <EditText
-            android:id="@+id/sourceSumm"
+            android:id="@+id/source_sum"
             style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -36,7 +36,7 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView2"
+        android:id="@+id/source_currency_place"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginLeft="8dp"
@@ -44,7 +44,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView1"
+        app:layout_constraintTop_toBottomOf="@+id/source_sum_place"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp">
 
@@ -62,29 +62,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/sourceImg"
+                    android:id="@+id/source_img_in_card"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginLeft="4dp"
-                    android:src="@mipmap/round_img" />
+                    android:src="@mipmap/card_img" />
 
                 <TextView
-                    android:id="@+id/sourceCharCodeText"
+                    android:id="@+id/source_char_code_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/sourceImg"
-                    android:layout_alignTop="@+id/sourceImg"
-                    android:layout_alignRight="@+id/sourceImg"
-                    android:layout_alignBottom="@+id/sourceImg"
+                    android:layout_alignLeft="@+id/source_img_in_card"
+                    android:layout_alignTop="@+id/source_img_in_card"
+                    android:layout_alignRight="@+id/source_img_in_card"
+                    android:layout_alignBottom="@+id/source_img_in_card"
                     android:layout_margin="1dp"
                     android:gravity="center"
                     android:textColor="#000000" />
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/sourceName"
+                android:id="@+id/source_currency_name_in_card"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="8dp"
@@ -101,7 +101,7 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView3"
+        android:id="@+id/dest_currency_place"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginEnd="8dp"
@@ -111,7 +111,7 @@
         android:layout_marginTop="36dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+        app:layout_constraintTop_toBottomOf="@+id/source_currency_place">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -127,29 +127,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/destImg"
+                    android:id="@+id/dest_img_in_card"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginLeft="4dp"
-                    android:src="@mipmap/round_img" />
+                    android:src="@mipmap/card_img" />
 
                 <TextView
-                    android:id="@+id/destCharCodeText"
+                    android:id="@+id/dest_char_code_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/destImg"
-                    android:layout_alignTop="@+id/destImg"
-                    android:layout_alignRight="@+id/destImg"
-                    android:layout_alignBottom="@+id/destImg"
+                    android:layout_alignLeft="@+id/dest_img_in_card"
+                    android:layout_alignTop="@+id/dest_img_in_card"
+                    android:layout_alignRight="@+id/dest_img_in_card"
+                    android:layout_alignBottom="@+id/dest_img_in_card"
                     android:layout_margin="1dp"
                     android:gravity="center"
                     android:textColor="#000000" />
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/destName"
+                android:id="@+id/dest_currency_name_in_card"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="8dp"
@@ -168,7 +168,7 @@
 
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView4"
+        android:id="@+id/dest_sum_place"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginEnd="8dp"
@@ -179,10 +179,10 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+        app:layout_constraintTop_toBottomOf="@+id/dest_currency_place">
 
         <TextView
-            android:id="@+id/destSumm"
+            android:id="@+id/dest_sum"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="4dp"
@@ -192,8 +192,8 @@
             android:ems="10"
             android:maxLines="1"
             android:textSize="20sp"
-            app:layout_constraintLeft_toLeftOf="@+id/cardView4"
-            app:layout_constraintTop_toTopOf="@+id/cardView4"/>
+            app:layout_constraintLeft_toLeftOf="@+id/dest_sum_place"
+            app:layout_constraintTop_toTopOf="@+id/dest_sum_place"/>
 
 
         </android.support.v7.widget.CardView>

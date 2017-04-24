@@ -1,4 +1,4 @@
-package ndrwk.converter.Model;
+package ndrwk.converter.model;
 
 import org.simpleframework.xml.core.Persister;
 

@@ -1,4 +1,4 @@
-package ndrwk.converter.View;
+package ndrwk.converter.view;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,8 +55,8 @@ class EntireListAdapter extends CommonListAdapter {
 
         @Override
         void findControls(View v) {
-            charCode = (TextView) v.findViewById(R.id.charCodeText);
-            name = (TextView) v.findViewById(R.id.currName);
+            charCode = (TextView) v.findViewById(R.id.char_code_in_list);
+            name = (TextView) v.findViewById(R.id.currency_name_in_list);
         }
     }
 }

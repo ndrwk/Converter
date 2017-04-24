@@ -1,4 +1,4 @@
-package ndrwk.converter.Presenter;
+package ndrwk.converter.presenter;
 
 import android.os.AsyncTask;
 
@@ -8,11 +8,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-import ndrwk.converter.Model.Currency;
-import ndrwk.converter.Model.ModelHolder;
-import ndrwk.converter.Model.ModelUtils;
-import ndrwk.converter.View.ConverterView;
-import ndrwk.converter.View.CurrencyView;
+import ndrwk.converter.model.Currency;
+import ndrwk.converter.model.ModelHolder;
+import ndrwk.converter.model.ModelUtils;
+import ndrwk.converter.view.ConverterView;
+import ndrwk.converter.view.CurrencyView;
 
 public class ConverterPresenter extends CommonPresenter<ModelHolder, ConverterView> {
 

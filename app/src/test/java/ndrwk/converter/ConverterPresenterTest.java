@@ -4,10 +4,10 @@ package ndrwk.converter;
 import org.junit.Before;
 import org.junit.Test;
 
-import ndrwk.converter.Model.ModelHolder;
-import ndrwk.converter.Model.ModelUtils;
-import ndrwk.converter.Presenter.ConverterPresenter;
-import ndrwk.converter.View.ConverterView;
+import ndrwk.converter.model.ModelHolder;
+import ndrwk.converter.model.ModelUtils;
+import ndrwk.converter.presenter.ConverterPresenter;
+import ndrwk.converter.view.ConverterView;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;

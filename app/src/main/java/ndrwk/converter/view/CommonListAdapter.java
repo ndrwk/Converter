@@ -1,4 +1,4 @@
-package ndrwk.converter.View;
+package ndrwk.converter.view;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

@@ -1,4 +1,4 @@
-package ndrwk.converter.View;
+package ndrwk.converter.view;
 
 import org.json.JSONException;
 import org.json.JSONObject;

@@ -1,4 +1,4 @@
-package ndrwk.converter.Presenter;
+package ndrwk.converter.presenter;
 
 import android.support.annotation.NonNull;
 

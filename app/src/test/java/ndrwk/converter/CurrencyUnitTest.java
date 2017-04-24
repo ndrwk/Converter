@@ -2,7 +2,7 @@ package ndrwk.converter;
 
 import org.junit.Test;
 
-import ndrwk.converter.Model.Currency;
+import ndrwk.converter.model.Currency;
 
 import static org.junit.Assert.*;
 

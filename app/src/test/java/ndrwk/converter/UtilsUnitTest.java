@@ -2,9 +2,9 @@ package ndrwk.converter;
 
 import org.junit.Test;
 
-import ndrwk.converter.Model.Currency;
-import ndrwk.converter.Model.ModelHolder;
-import ndrwk.converter.Model.ModelUtils;
+import ndrwk.converter.model.Currency;
+import ndrwk.converter.model.ModelHolder;
+import ndrwk.converter.model.ModelUtils;
 
 import static org.junit.Assert.assertEquals;
 

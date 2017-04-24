@@ -1,4 +1,4 @@
-package ndrwk.converter.View;
+package ndrwk.converter.view;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -20,7 +20,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import ndrwk.converter.Presenter.ConverterPresenter;
+import ndrwk.converter.presenter.ConverterPresenter;
 import ndrwk.converter.R;
 
 public class MainActivity extends AppCompatActivity implements FloatingList.IOnDialogListItemClick, ConverterView{
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements FloatingList.IOnD
         super.onCreate(savedInstanceState);
         presenter = new ConverterPresenter();
         setContentView(R.layout.activity_main);
-        sourceSumm = (EditText) findViewById(R.id.sourceSumm);
+        sourceSumm = (EditText) findViewById(R.id.source_sum);
         sourceSumm.setFocusableInTouchMode(true);
         sourceSumm.requestFocus();
         sourceSumm.setOnKeyListener(new View.OnKeyListener() {
@@ -63,15 +63,15 @@ public class MainActivity extends AppCompatActivity implements FloatingList.IOnD
                 return false;
             }
         });
-        sourceCharCode = (TextView) findViewById(R.id.sourceCharCodeText);
-        sourceName = (TextView) findViewById(R.id.sourceName);
-        destCharCode = (TextView) findViewById(R.id.destCharCodeText);
-        destName = (TextView) findViewById(R.id.destName);
-        destSumm = (TextView) findViewById(R.id.destSumm);
-        source = (CardView) findViewById(R.id.cardView2);
-        source.setRadius(2);
-        dest = (CardView) findViewById(R.id.cardView3);
-        dest.setRadius(2);
+        sourceCharCode = (TextView) findViewById(R.id.source_char_code_text);
+        sourceName = (TextView) findViewById(R.id.source_currency_name_in_card);
+        destCharCode = (TextView) findViewById(R.id.dest_char_code_text);
+        destName = (TextView) findViewById(R.id.dest_currency_name_in_card);
+        destSumm = (TextView) findViewById(R.id.dest_sum);
+        source = (CardView) findViewById(R.id.source_currency_place);
+//        source.setRadius(2);
+        dest = (CardView) findViewById(R.id.dest_currency_place);
+//        dest.setRadius(2);
         source.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
