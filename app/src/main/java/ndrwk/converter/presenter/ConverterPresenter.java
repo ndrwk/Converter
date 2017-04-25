@@ -8,6 +8,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
+import ndrwk.converter.R;
 import ndrwk.converter.model.Currency;
 import ndrwk.converter.model.ModelHolder;
 import ndrwk.converter.model.ModelUtils;
@@ -28,9 +29,11 @@ public class ConverterPresenter extends CommonPresenter<ModelHolder, ConverterVi
             if (view().checkNetwork()) {
                 final RatesDownloader downloadTask = new RatesDownloader();
                 downloadTask.execute(xmlUrl);
-                view().showMessage("Загрузка справочника");
+                String message = view().getContext().getResources().getString(R.string.load_dic_message);
+                view().showMessage(message);
             } else {
-                view().showMessage("Используется сохраненный справочник, проверьте доступ в Интернет");
+                String message = view().getContext().getResources().getString(R.string.check_internet);
+                view().showMessage(message);
                 model.setXml(view().loadXml());
                 ModelUtils.genListFromXml(model);
                 updateModel();

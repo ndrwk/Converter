@@ -5,4 +5,6 @@
     <string name="choose_dest_currency">Выбор источника</string>
     <string name="choose_source_currency">Куда перевести</string>
     <string name="sourse_summ">Введите сумму</string>
+    <string name="load_dic_message">Загрузка справочника</string>
+    <string name="check_internet">Используется сохраненный справочник, проверьте доступ в Интернет</string>
 </resources>

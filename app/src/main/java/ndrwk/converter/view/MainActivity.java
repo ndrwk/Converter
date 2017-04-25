@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements FloatingList.IOnD
     private final static String DEST_POS = "dest_pos";
     private final static String SOURCE_SUMM = "source_summ";
     private final static String DEST_SUMM = "dest_summ";
+    public static final String DIALOG_TAG = "dialog";
 
     private EditText sourceSumm;
     private TextView sourceCharCode;
@@ -37,8 +38,6 @@ public class MainActivity extends AppCompatActivity implements FloatingList.IOnD
     private TextView destCharCode;
     private TextView destName;
     private TextView destSumm;
-    private CardView source;
-    private CardView dest;
 
     private ConverterPresenter presenter;
 
@@ -68,10 +67,8 @@ public class MainActivity extends AppCompatActivity implements FloatingList.IOnD
         destCharCode = (TextView) findViewById(R.id.dest_char_code_text);
         destName = (TextView) findViewById(R.id.dest_currency_name_in_card);
         destSumm = (TextView) findViewById(R.id.dest_sum);
-        source = (CardView) findViewById(R.id.source_currency_place);
-//        source.setRadius(2);
-        dest = (CardView) findViewById(R.id.dest_currency_place);
-//        dest.setRadius(2);
+        CardView source = (CardView) findViewById(R.id.source_currency_place);
+        CardView dest = (CardView) findViewById(R.id.dest_currency_place);
         source.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -139,13 +136,13 @@ public class MainActivity extends AppCompatActivity implements FloatingList.IOnD
     @Override
     public void showCurrencyList(ArrayList<CurrencyView> currencyList) {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        Fragment prev = getSupportFragmentManager().findFragmentByTag("dialog");
+        Fragment prev = getSupportFragmentManager().findFragmentByTag(DIALOG_TAG);
         if (prev != null) {
             ft.remove(prev);
         }
         ft.addToBackStack(null);
         DialogFragment dialogFragment = FragmentFabric.newDialogInstance(currencyList);
-        dialogFragment.show(ft, "dialog");
+        dialogFragment.show(ft, DIALOG_TAG);
     }
 
     @Override
@@ -217,6 +214,11 @@ public class MainActivity extends AppCompatActivity implements FloatingList.IOnD
         destSumm.setEnabled(false);
     }
 
+    @Override
+    public Context getContext() {
+        return this;
+    }
+
 
     public static class FragmentFabric extends Fragment {
         private static DialogFragment dialogFragmentInstance;
@@ -224,7 +226,7 @@ public class MainActivity extends AppCompatActivity implements FloatingList.IOnD
         public static DialogFragment newDialogInstance(ArrayList<CurrencyView> currencyList) {
             dialogFragmentInstance = new FloatingList();
             Bundle args = new Bundle();
-            args.putParcelableArrayList(CURRENCY_LIST, (ArrayList<? extends Parcelable>) currencyList);
+            args.putParcelableArrayList(CURRENCY_LIST, currencyList);
             dialogFragmentInstance.setArguments(args);
             return dialogFragmentInstance;
         }

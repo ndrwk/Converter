@@ -1,5 +1,7 @@
 package ndrwk.converter.view;
 
+import android.content.Context;
+
 import java.util.ArrayList;
 
 
@@ -19,5 +21,5 @@ public interface ConverterView {
     void savePrefs(String xml, int sourcePos, int destPos, double sourceSumm, double destSumm);
     void enableControls();
     void disableControls();
-
+    Context getContext();
 }

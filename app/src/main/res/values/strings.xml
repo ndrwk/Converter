@@ -4,4 +4,7 @@
     <string name="choose_dest_currency">Choose destination currency</string>
     <string name="sourse_summ">Enter the summ</string>
     <string name="choose_currency">Choose currency</string>
+    <string name="load_dic_message">Loading rates</string>
+    <string name="check_internet">Check the internet connection</string>
+
 </resources>
