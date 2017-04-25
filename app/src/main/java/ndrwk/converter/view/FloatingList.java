@@ -28,7 +28,6 @@ public class FloatingList extends DialogFragment implements CommonListAdapter.IO
     }
 
     private IOnDialogListItemClick eventCallback;
-    private Context context;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -38,7 +37,7 @@ public class FloatingList extends DialogFragment implements CommonListAdapter.IO
         getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         RecyclerView recyclerView = (RecyclerView) rootView.findViewById(R.id.entirelist_recycler_view);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(listAdapter);
         return rootView;
     }
@@ -46,7 +45,6 @@ public class FloatingList extends DialogFragment implements CommonListAdapter.IO
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        this.context = context;
         eventCallback = (IOnDialogListItemClick) context;
     }
 

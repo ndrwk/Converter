@@ -31,7 +31,7 @@
                 android:layout_alignEnd="@+id/list_img_round"
                 android:layout_alignBottom="@+id/list_img_round"
                 android:gravity="center"
-                android:textSize="@dimen/text_in_list_size"
+                android:textSize="@dimen/text_size_in_list"
                 android:textColor="@color/black" />
         </RelativeLayout>
 
@@ -41,8 +41,8 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/general_margin"
             android:layout_marginRight="@dimen/general_margin"
-            android:maxLines="@integer/text_lines_in_list_item"
-            android:textSize="@dimen/text_in_list_size" />
+            android:maxLines="@integer/qty_lines_in_list_item"
+            android:textSize="@dimen/text_size_in_list" />
 
     </LinearLayout>
 
