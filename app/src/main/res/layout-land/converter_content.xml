@@ -20,17 +20,8 @@
 
         <EditText
             android:id="@+id/source_sum"
-            style="@style/Widget.AppCompat.EditText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/half_margin"
-            android:layout_marginLeft="@dimen/big_margin"
-            android:layout_marginRight="@dimen/big_margin"
-            android:layout_marginTop="@dimen/half_margin"
-            android:hint="@string/sourse_summ"
-            android:inputType="numberDecimal"
-            android:maxLines="@integer/qty_lines_in_source_sum"
-            android:textSize="@dimen/text_size_in_source_sum"/>
+            style="@style/Widget.AppCompat.EditText.InCard"
+            android:hint="@string/sourse_summ"/>
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -176,6 +167,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dest_currency_place">
+
         <TextView
             android:id="@+id/dest_sum"
             android:layout_width="match_parent"
@@ -188,7 +180,6 @@
             android:textSize="@dimen/text_size_in_dest_sum"
             app:layout_constraintTop_toTopOf="@+id/dest_sum_place"
             app:layout_constraintLeft_toLeftOf="@+id/dest_sum_place"/>
-
 
     </android.support.v7.widget.CardView>
 
